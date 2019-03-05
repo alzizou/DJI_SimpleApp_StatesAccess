@@ -1,0 +1,379 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <TextureView
+        android:id="@+id/video_previewer_surface"
+        android:layout_width="match_parent"
+        android:layout_height="514dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="217dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_capture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:freezesText="false"
+            android:text="@string/capture"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/btn_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/start_record0"
+            android:textOff="@string/start_record1"
+            android:textOn="@string/stop_record"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_shoot_photo_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/shoot_photo_mode"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_record_video_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/record_video_mode" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/video_previewer_surface"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginBottom="-31dp"
+        android:freezesText="false"
+        android:text="textview"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="-51dp"
+        android:text="textview"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginBottom="-72dp"
+        android:freezesText="false"
+        android:text="textview"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="-29dp"
+        android:freezesText="false"
+        android:text="Long."
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="-51dp"
+        android:text="Lat."
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="-73dp"
+        android:text="Alt."
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="-102dp"
+        android:text="Vx"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="-122dp"
+        android:text="Vy"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="-143dp"
+        android:text="Vz"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="-102dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="-122dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="-143dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="254dp"
+        android:layout_marginBottom="-30dp"
+        android:text="Pitch"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="255dp"
+        android:layout_marginBottom="-53dp"
+        android:text="Roll"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="254dp"
+        android:layout_marginBottom="-73dp"
+        android:text="Yaw"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="303dp"
+        android:layout_marginBottom="-31dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="302dp"
+        android:layout_marginBottom="-52dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="303dp"
+        android:layout_marginBottom="-74dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="255dp"
+        android:layout_marginBottom="-104dp"
+        android:text="Wx"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="256dp"
+        android:layout_marginBottom="-125dp"
+        android:text="Wy"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="256dp"
+        android:layout_marginBottom="-143dp"
+        android:text="Wz"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="303dp"
+        android:layout_marginBottom="-104dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="304dp"
+        android:layout_marginBottom="-124dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/video_previewer_surface"
+        android:layout_alignBottom="@+id/video_previewer_surface"
+        android:layout_marginLeft="304dp"
+        android:layout_marginBottom="-144dp"
+        android:text="textview "
+        android:textColor="@color/colorBlack" />
+
+</RelativeLayout>
